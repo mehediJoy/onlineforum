@@ -1,14 +1,41 @@
 <template>
-  <router-view></router-view>
+  <Navbar></Navbar>
+  <router-view :subjects="subjects"></router-view>
 </template>
 
 <script>
-import Nav from "./views/Nav.vue";
+import Navbar from "./views/Navbar.vue";
 
 export default {
   name: "App",
   components: {
-    Nav,
+    Navbar,
+  },
+  data() {
+    return {
+      subjects: [
+        {
+          id: 1,
+          name: "Problem Solving",
+        },
+        {
+          id: 2,
+          name: "Data Structures",
+        },
+        {
+          id: 3,
+          name: "Algorithms",
+        },
+        {
+          id: 4,
+          name: "Database Management Systems",
+        },
+        {
+          id: 5,
+          name: "Operating System",
+        },
+      ],
+    };
   },
   methods: {},
 };

@@ -1,18 +1,20 @@
 <template>
-    <h1>ass</h1>
+    <div class="container">
+        <h1>Browse different topic from below.</h1>
+        <Subject :subjects="subjects"/>
+    </div>
 </template>
 
 <script>
+import Subject from "../components/Subject.vue";
+
 export default {
     name: "Home",
-    props: { 
-        subjects: [],
+    props: {
+        subjects: Array,
     },
     components: {
-
-    },
-    methods: {
-        
-    },
+        Subject
+    },  
 }
 </script>
