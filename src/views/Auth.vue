@@ -1,18 +1,40 @@
 <template>
-  <form action="">
-    <div class="form-group">
-      <label for="usr">Name:</label>
-      <input type="text" class="form-control" id="usr" />
+  <div class="container">
+    <div v-if="!regShow">
+      <Login />
+      <p>If you don't have account <a @click="linkClicked()" class="chgCur">Click Here</a></p>
     </div>
-    <div class="form-group">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="pwd" />
+    <div v-if="regShow">
+      <register />
     </div>
-  </form>
+  </div>
 </template>
 
 <script>
+import Login from "../components/Login.vue";
+import Register from "../components/Register.vue";
+
 export default {
   name: "Auth",
+  components: {
+    Login,
+    Register,
+  },
+  data() {
+    return {
+      regShow: false,
+    };
+  },
+  methods: {
+    linkClicked() {
+      this.regShow = !this.regShow;
+    }
+  },
 };
 </script>
+
+<style scoped>
+.chgCur:hover {
+  cursor: pointer;
+}
+</style>

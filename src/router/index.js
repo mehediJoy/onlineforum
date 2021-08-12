@@ -2,6 +2,8 @@ import { createRouter, createWebHashHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import About from "../views/About.vue";
 import Ask from "../views/Ask.vue";
+import Auth from "../views/Auth.vue";
+import Posts from "../components/Posts.vue";
 
 const routes = [
   {
@@ -19,6 +21,16 @@ const routes = [
     name: "About",
     component: About
   },
+  {
+    path: "/auth",
+    name: "Auth",
+    component: Auth
+  },
+  {
+    path: "/posts/:subname",
+    name: "Posts",
+    component: Posts
+  }
 ];
 
 const router = createRouter({

@@ -1,13 +1,14 @@
 <template>
-  <div class="card" :key="subject.id" v-for="subject in subjects">
+  <div class="card" :key="sub.id" v-for="sub in subjects">
     <div class="card-body">
-      {{ subject.name }}
-      <router-link to="/ask">Posts</router-link>
-      </div>
+      <p>{{sub.name}}</p>
+      <router-link :to="{name:'Posts', params: {subname: sub.name}}">Posts</router-link>
+    </div>
   </div>
 </template>
 
 <script>
+
 export default {
   name: "Subject",
   props: {

@@ -16,7 +16,7 @@ export default {
       subjects: [
         {
           id: 1,
-          name: "Problem Solving",
+          name: "Programming",
         },
         {
           id: 2,
@@ -28,7 +28,7 @@ export default {
         },
         {
           id: 4,
-          name: "Database Management Systems",
+          name: "Database",
         },
         {
           id: 5,
@@ -37,7 +37,9 @@ export default {
       ],
     };
   },
-  methods: {},
+  methods: {
+
+  },
 };
 </script>
 

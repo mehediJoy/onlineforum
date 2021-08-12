@@ -1,0 +1,45 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "postTitle": "This is a test! 1",
+      "postBody": "Lorem Ipsum dolor amor emit 1",
+      "category": "Database",
+      "authorid": "1"
+    },
+    {
+      "id": 2,
+      "postTitle": "This is a test! 2",
+      "postBody": "Lorem Ipsum dolor amor emit 2",
+      "category": "Database",
+      "authorid": "1"
+    },
+    {
+      "id": 3,
+      "postTitle": "This is a test! 2",
+      "postBody": "Lorem Ipsum dolor amor emit 2",
+      "category": "Programming",
+      "authorid": "2"
+    },
+    {
+      "id": 4,
+      "postTitle": "This is a test! 3",
+      "postBody": "Lorem Ipsum dolor amor emit 4",
+      "category": "Programming",
+      "authorid": "2"
+    }
+  ],
+  "comments": [
+    {"id":1, "name": "Laurinda James", "body": "Great! I love Database.", "postid":1 },
+    {"id":2, "name": "Leo Messi", "body": "Si! I love Database.", "postid":1 },
+    {"id":3, "name": "Laurinda James", "body": "Great! I love Database.", "postid":2 },
+    {"id":4, "name": "Leo Messi", "body": "Si! I love Database.", "postid":2 },
+    {"id":5, "name": "Laurinda James", "body": "Great! I love Programming.", "postid":3 },
+    {"id":6, "name": "Leo Messi", "body": "Si! I love Programming.", "postid":3 },
+    {"id":7, "name": "Laurinda James", "body": "Great! I love Programming.", "postid":4 },
+    {"id":8, "name": "Leo Messi", "body": "Si! I love Programming.", "postid":4 },
+    {"id":9, "name": "Laurinda James", "body": "Great! I love Programming.", "postid":4 },
+    {"id":10, "name": "Leo Messi", "body": "Si! I love Progrmming.", "postid":4 }
+  ],
+  "users": []
+}
