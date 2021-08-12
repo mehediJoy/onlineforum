@@ -27,19 +27,120 @@
       "postBody": "Lorem Ipsum dolor amor emit 4",
       "category": "Programming",
       "authorid": "2"
+    },
+    {
+      "postTitle": "This is user Created",
+      "postBody": "asdfad adf adfadfadfa adfad",
+      "category": "Programming",
+      "authorid": 1,
+      "id": 5
+    },
+    {
+      "postTitle": "Is Data Structures Necessary?",
+      "postBody": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+      "category": "Data Structures",
+      "authorid": 1,
+      "id": 6
+    },
+    {
+      "postTitle": "OS is the most boring subject Ever :(",
+      "postBody": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "category": "Operating Systems",
+      "authorid": 1,
+      "id": 7
+    },
+    {
+      "postTitle": "Algorithm is very hard to Understansd.",
+      "postBody": "Mauris fermentum, lacus at aliquam finibus, nisi lacus volutpat lacus, vel feugiat odio lectus sed libero. Aliquam vitae imperdiet elit, vitae pharetra metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean faucibus tincidunt purus vitae molestie. Morbi sagittis turpis sollicitudin nunc gravida, a malesuada diam pretium. Ut ultrices velit magna, ac condimentum dui dictum vel. Nam vulputate dui ut felis congue sodales. Donec dictum varius mi eget efficitur. Vestibulum magna quam, tincidunt vel blandit nec, lobortis vel elit. Suspendisse potenti. In tristique consequat quam, vitae molestie est vestibulum ac. Suspendisse in pretium metus, quis vehicula lacus. Sed suscipit consequat velit sit amet consequat. Nullam sed elit blandit, convallis nisi at, ultricies nibh. Morbi fringilla viverra dui, sed dapibus mauris commodo sit amet.",
+      "category": "Algorithms",
+      "authorid": 1,
+      "id": 8
     }
   ],
   "comments": [
-    {"id":1, "name": "Laurinda James", "body": "Great! I love Database.", "postid":1 },
-    {"id":2, "name": "Leo Messi", "body": "Si! I love Database.", "postid":1 },
-    {"id":3, "name": "Laurinda James", "body": "Great! I love Database.", "postid":2 },
-    {"id":4, "name": "Leo Messi", "body": "Si! I love Database.", "postid":2 },
-    {"id":5, "name": "Laurinda James", "body": "Great! I love Programming.", "postid":3 },
-    {"id":6, "name": "Leo Messi", "body": "Si! I love Programming.", "postid":3 },
-    {"id":7, "name": "Laurinda James", "body": "Great! I love Programming.", "postid":4 },
-    {"id":8, "name": "Leo Messi", "body": "Si! I love Programming.", "postid":4 },
-    {"id":9, "name": "Laurinda James", "body": "Great! I love Programming.", "postid":4 },
-    {"id":10, "name": "Leo Messi", "body": "Si! I love Progrmming.", "postid":4 }
+    {
+      "id": 1,
+      "name": "Laurinda James",
+      "body": "Great! I love Database.",
+      "postid": 1
+    },
+    {
+      "id": 2,
+      "name": "Leo Messi",
+      "body": "Si! I love Database.",
+      "postid": 1
+    },
+    {
+      "id": 3,
+      "name": "Laurinda James",
+      "body": "Great! I love Database.",
+      "postid": 2
+    },
+    {
+      "id": 4,
+      "name": "Leo Messi",
+      "body": "Si! I love Database.",
+      "postid": 2
+    },
+    {
+      "id": 5,
+      "name": "Laurinda James",
+      "body": "Great! I love Programming.",
+      "postid": 3
+    },
+    {
+      "id": 6,
+      "name": "Leo Messi",
+      "body": "Si! I love Programming.",
+      "postid": 3
+    },
+    {
+      "id": 7,
+      "name": "Laurinda James",
+      "body": "Great! I love Programming.",
+      "postid": 4
+    },
+    {
+      "id": 8,
+      "name": "Leo Messi",
+      "body": "Si! I love Programming.",
+      "postid": 4
+    },
+    {
+      "id": 9,
+      "name": "Laurinda James",
+      "body": "Great! I love Programming.",
+      "postid": 4
+    },
+    {
+      "id": 10,
+      "name": "Leo Messi",
+      "body": "Si! I love Progrmming.",
+      "postid": 4
+    },
+    {
+      "name": "",
+      "body": "HIiii",
+      "postid": 3,
+      "id": 11
+    },
+    {
+      "name": "",
+      "body": "User added comment.",
+      "postid": 5,
+      "id": 12
+    }
   ],
-  "users": []
+  "users": [
+    {
+      "username": "mehediJoy",
+      "password": "12345",
+      "id": 1
+    },
+    {
+      "username": "etlxpw",
+      "password": "1234",
+      "id": 2
+    }
+  ]
 }

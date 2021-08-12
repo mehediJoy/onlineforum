@@ -32,7 +32,7 @@ export default {
         },
         {
           id: 5,
-          name: "Operating System",
+          name: "Operating Systems",
         },
       ],
     };

@@ -17,7 +17,7 @@
     </ul>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <router-link to="/auth" tag="a" class="nav-link">Register / Login</router-link>
+        <router-link to="/login" tag="a" class="nav-link">Login</router-link>
       </li>
     </ul>
   </nav>
