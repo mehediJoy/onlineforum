@@ -1,21 +1,43 @@
 <template>
   <div class="container">
-    <form>
+    <form @submit.prevent>
       <div class="form-group">
         <label for="postTitle">Title</label>
-        <input type="text" class="form-control" id="postTitle" />
+        <input
+          v-model="postTitle"
+          type="text"
+          class="form-control"
+          id="postTitle"
+        />
       </div>
       <div class="form-group">
         <label for="postBody">Body</label>
-        <textarea class="form-control" rows="5" id="postBody"></textarea>
+        <textarea
+          v-model="postBody"
+          class="form-control"
+          rows="5"
+          id="postBody"
+        ></textarea>
       </div>
       <div class="form-group">
         <label for="sel1">Select list:</label>
-        <select class="form-control">
-          <option :key="subject.id" v-for="subject in subjects">{{subject.name}}</option>
+        <select class="form-control" v-model="category">
+          <option
+            :key="subject.id"
+            v-for="subject in subjects"
+            v-bind:value="subject.name"
+          >
+            {{ subject.name }}
+          </option>
         </select>
       </div>
-      <button class="btn btn-outline-primary" type="button">Submit</button>
+      <button
+        @click="manageForm()"
+        class="btn btn-outline-primary"
+        type="button"
+      >
+        Submit
+      </button>
     </form>
   </div>
 </template>
@@ -24,7 +46,35 @@
 export default {
   name: "Ask",
   props: {
-      subjects: Array,
+    subjects: Array,
+  },
+  data() {
+    return {
+      postTitle: "",
+      postBody: "",
+      category: "",
+    };
+  },
+  methods: {
+    async manageForm() {
+      const newPost = {
+        postTitle: this.postTitle,
+        postBody: this.postBody,
+        category: this.category,
+        authorid: "1"
+      };
+
+      const res = await fetch("api/posts", {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify(newPost),
+      });
+      const data = await res.json();
+      console.log(data);
+      this.$router.push({ path: `/posts/${this.category}` });
+    },
   },
 };
 </script>

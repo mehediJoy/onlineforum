@@ -41,6 +41,8 @@ export default {
       var len = Object.keys(data).length
       if(len !== 0) {
         this.succPage = true;
+        this.$store.commit('setLoggedIn');
+        console.log(this.$store.state.loggedIn);
       }
     },
     buttonClicked() {

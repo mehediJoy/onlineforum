@@ -15,17 +15,18 @@
         <router-link to="/about" tag="a" class="nav-link">About</router-link>
       </li>
     </ul>
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <router-link to="/login" tag="a" class="nav-link">Login</router-link>
-      </li>
-    </ul>
   </nav>
 </template>
 
 <script>
 export default {
   name: "Nav",
+  data() {
+    return {
+      loggedIn: false,
+    };
+  },
+  methods: {},
 };
 </script>
 

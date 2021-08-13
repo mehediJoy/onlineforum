@@ -55,6 +55,26 @@
       "category": "Algorithms",
       "authorid": 1,
       "id": 8
+    },
+    {
+      "postTitle": "Is Data Structures Necessary?",
+      "postBody": "fdsf dasfasd ;fjadf a;flj alfj ;adflj ;afj ;ls",
+      "category": "Data Structures",
+      "id": 9
+    },
+    {
+      "postTitle": "Hello OS",
+      "postBody": "Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut ninja wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit ninja lobortis nisl ut aliquip ex ea commodo consequat. Duis ninja autem vel eum iriure dolor in hendrerit in vulputate ninja velit esse molestie consequat, vel illum dolore eu feugiat nulla ninja facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit",
+      "category": "Operating Systems",
+      "authorid": "1",
+      "id": 10
+    },
+    {
+      "postTitle": "Programming has highest paying jobs",
+      "postBody": "render asasasas asssssssf assss",
+      "category": "Programming",
+      "authorid": "1",
+      "id": 11
     }
   ],
   "comments": [
@@ -129,6 +149,12 @@
       "body": "User added comment.",
       "postid": 5,
       "id": 12
+    },
+    {
+      "name": "",
+      "body": "1234 asd",
+      "postid": 10,
+      "id": 13
     }
   ],
   "users": [
@@ -141,6 +167,11 @@
       "username": "etlxpw",
       "password": "1234",
       "id": 2
+    },
+    {
+      "username": "goku123",
+      "password": "1235",
+      "id": 3
     }
   ]
 }
