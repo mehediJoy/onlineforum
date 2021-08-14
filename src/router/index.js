@@ -7,6 +7,8 @@ import Posts from "../components/Posts.vue";
 import Login from "../components/Login.vue";
 import Register from "../components/Register.vue";
 
+import Admin from "../views/Admin.vue";
+import Edit from "../components/Edit.vue";
 
 const routes = [
   {
@@ -38,6 +40,16 @@ const routes = [
     path: "/posts/:subname",
     name: "Posts",
     component: Posts,
+  },
+  {
+    path: "/admin",
+    name: "Admin",
+    component: Admin,
+  },
+  {
+    path: "/admin/posts/:id",
+    name: "Edit",
+    component: Edit
   },
 ];
 
