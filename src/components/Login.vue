@@ -8,15 +8,29 @@
       </div>
       <div class="form-group">
         <label for="pwd">Password:</label>
-        <input v-model="password" type="password" class="form-control" id="pwd" />
+        <input
+          v-model="password"
+          type="password"
+          class="form-control"
+          id="pwd"
+        />
       </div>
-      <button @click="buttonClicked()" class="btn btn-outline-primary" type="button">Login</button>
+      <button
+        @click="buttonClicked()"
+        class="btn btn-outline-primary"
+        type="button"
+      >
+        Login
+      </button>
     </form>
     <p>
       If you don't have account
       <router-link to="/register" tag="a">Click Here</router-link>
     </p>
-    <h1 v-show="succPage">Login Successful</h1>
+    <div v-show="showRes">
+      <h1 v-if="succPage">Login Successful</h1>
+      <h1 v-else>Please give valid information.</h1>
+    </div>
   </div>
 </template>
 
@@ -28,25 +42,28 @@ export default {
       username: "",
       password: "",
       succPage: Boolean,
+      showRes: Boolean,
     };
   },
   created() {
     this.succPage = false;
+    this.showRes = false;
   },
   methods: {
     async checkInfo(usr, pwd) {
       const res = await fetch(`api/users?username=${usr}&password=${pwd}`);
 
       const data = await res.json();
-      var len = Object.keys(data).length
-      if(len !== 0) {
+      var len = Object.keys(data).length;
+      if (len !== 0) {
         this.succPage = true;
-        this.$store.commit('setLoggedIn');
+        this.$store.commit("setLoggedIn");
       }
     },
     buttonClicked() {
       this.checkInfo(this.username, this.password);
-    }
-  }
+      this.showRes = true;
+    },
+  },
 };
 </script>
