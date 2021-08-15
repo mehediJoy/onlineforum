@@ -61,8 +61,8 @@ export default {
         },
         body: JSON.stringify(newUser),
       });
+      // eslint-disable-next-line no-unused-vars
       const data = await res.json();
-      console.log(data);
       this.succPage = true;
     },
   },

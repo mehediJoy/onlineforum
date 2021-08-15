@@ -10,7 +10,7 @@
           <h4 class="card-title">{{ post.postTitle }}</h4>
           <p class="card-text">{{ post.postBody }}</p>
           <button class="btn btn-info" @click="eidtPost(post.id)">Eidt</button>
-          <button class="btn btn-danger">Delete</button>
+          <button class="btn btn-danger" @click="deleteSomething(post.id, 1)">Delete</button>
         </div>
       </div>
     </div>
@@ -18,8 +18,17 @@
 
   <div class="usersPanel">
     <p>
-      To Manage Users <b><a class="hov">Click Here</a></b>
+      To Manage Users <b><a class="hov" @click="userButton">Click Here</a></b>
     </p>
+    <div v-for="user in users" :key="user.id" v-show="userComp">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">{{ user.username }}</h4>
+          <p class="card-text">{{ user.password }}</p>
+          <button class="btn btn-danger" @click="deleteSomething(user.id, 2)">Delete</button>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -54,11 +63,30 @@ export default {
       this.postComp = !this.postComp;
     },
     userButton() {
-      this.getUsers();  
+      this.getUsers();
       this.userComp = !this.userComp;
     },
     eidtPost(postid) {
-        this.$router.push({ path: `/admin/posts/${postid}` });
+      this.$router.push({ path: `/admin/posts/${postid}` });
+    },
+    async deleteSomething(id, comp) {
+      if (comp === 1) {
+        // eslint-disable-next-line no-unused-vars
+        const res = await fetch(`api/posts/${id}`, {
+          method: "DELETE",
+          headers: {
+            "Content-type": "application/json",
+          },
+        });
+      } else {
+        // eslint-disable-next-line no-unused-vars
+        const res = await fetch(`api/users/${id}`, {
+          method: "DELETE",
+          headers: {
+            "Content-type": "application/json",
+          },
+        });
+      }
     },
   },
 };

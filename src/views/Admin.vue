@@ -43,12 +43,10 @@ export default {
 
       const data = await res.json();
       var len = Object.keys(data).length;
-      console.log(data);
       if (len > 0) {
         this.adminName = data[0].adminName;
         this.showlogin = false;
         this.showpanel = true;
-        console.log(this.adminName);
       }
     },
     buttonClicked() {

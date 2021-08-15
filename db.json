@@ -78,9 +78,9 @@
       "id": 11
     },
     {
-      "postTitle": "Why Im the algo expert?",
-      "postBody": "i dont know 🤣🤣",
-      "category": "Algorithms",
+      "postTitle": "Throwaway posted on Programming",
+      "postBody": "This is the main body",
+      "category": "Programming",
       "authorid": "1",
       "id": 12
     }
@@ -183,8 +183,8 @@
       "id": 2
     },
     {
-      "username": "goku123",
-      "password": "1235",
+      "username": "throwaway12",
+      "password": "1234",
       "id": 3
     }
   ],

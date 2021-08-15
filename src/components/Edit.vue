@@ -48,8 +48,8 @@ export default {
         },
         body: JSON.stringify(newPost),
       });
+      // eslint-disable-next-line no-unused-vars
       const data = await res.json();
-      console.log(data);
       this.succPage = true;
     },
   },

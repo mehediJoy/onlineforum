@@ -55,8 +55,8 @@ export default {
         },
         body: JSON.stringify(comment),
       });
+      // eslint-disable-next-line no-unused-vars
       const data = await res.json();
-      console.log(typeof(data));
       this.succ = true;
     },
   },
