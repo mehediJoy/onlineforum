@@ -51,7 +51,7 @@ export default {
   },
   methods: {
     async checkInfo(usr, pwd) {
-      const res = await fetch(`api/users?username=${usr}&password=${pwd}`);
+      const res = await fetch(`https://csforumapi.herokuapp.com/users?username=${usr}&password=${pwd}`);
 
       const data = await res.json();
       var len = Object.keys(data).length;
