@@ -29,7 +29,7 @@ export default {
   },
   async created() {
     this.id = this.$route.params.id;
-    const res = await fetch(`api/posts/${this.id}`);
+    const res = await fetch(`https://csforumapi.herokuapp.com/posts/${this.id}`);
     const data = await res.json();
     this.postTitle = data.postTitle;
     this.postBody = data.postBody;
@@ -41,7 +41,7 @@ export default {
         postTitle: this.postTitle,
         postBody: this.postBody,
       };
-      const res = await fetch(`api/posts/${this.id}`, {
+      const res = await fetch(`https://csforumapi.herokuapp.com/posts/${this.id}`, {
         method: "PATCH",
         headers: {
           "Content-type": "application/json",

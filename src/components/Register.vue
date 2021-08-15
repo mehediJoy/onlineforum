@@ -54,7 +54,7 @@ export default {
         password: this.password,
       };
 
-      const res = await fetch("api/users", {
+      const res = await fetch("https://csforumapi.herokuapp.com/users", {
         method: "POST",
         headers: {
           "Content-type": "application/json",

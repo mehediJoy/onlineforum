@@ -37,7 +37,7 @@ export default {
   },
   methods: {
     async getComments(postid) {
-      const res = await fetch(`api/comments?postid=${postid}`);
+      const res = await fetch(`https://csforumapi.herokuapp.com/comments?postid=${postid}`);
       const data = await res.json();
       return data;
     },
@@ -48,7 +48,7 @@ export default {
         postid: this.postid,
       };
 
-      const res = await fetch("api/comments", {
+      const res = await fetch("https://csforumapi.herokuapp.com/comments", {
         method: "POST",
         headers: {
           "Content-type": "application/json",

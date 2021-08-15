@@ -21,7 +21,7 @@ export default {
   },
   methods: {
     async getPosts(subname) {
-      const res = await fetch(`api/posts?category=${subname}`);
+      const res = await fetch(`https://csforumapi.herokuapp.com/posts?category=${subname}`);
 
       const data = await res.json();
 

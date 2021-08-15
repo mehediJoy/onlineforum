@@ -38,7 +38,7 @@ export default {
   methods: {
     async adminLogin(usr, pwd) {
       const res = await fetch(
-        `api/admins?adminUsername=${usr}&password=${pwd}`
+        `https://csforumapi.herokuapp.com/admins?adminUsername=${usr}&password=${pwd}`
       );
 
       const data = await res.json();

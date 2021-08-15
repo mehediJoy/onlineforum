@@ -49,12 +49,12 @@ export default {
 
   methods: {
     async getPosts() {
-      const res = await fetch(`api/posts`);
+      const res = await fetch(`https://csforumapi.herokuapp.com/posts`);
       const data = await res.json();
       this.posts = data;
     },
     async getUsers() {
-      const res = await fetch(`api/users`);
+      const res = await fetch(`https://csforumapi.herokuapp.com/users`);
       const data = await res.json();
       this.users = data;
     },
@@ -72,7 +72,7 @@ export default {
     async deleteSomething(id, comp) {
       if (comp === 1) {
         // eslint-disable-next-line no-unused-vars
-        const res = await fetch(`api/posts/${id}`, {
+        const res = await fetch(`https://csforumapi.herokuapp.com/posts/${id}`, {
           method: "DELETE",
           headers: {
             "Content-type": "application/json",
@@ -80,7 +80,7 @@ export default {
         });
       } else {
         // eslint-disable-next-line no-unused-vars
-        const res = await fetch(`api/users/${id}`, {
+        const res = await fetch(`https://csforumapi.herokuapp.com/users/${id}`, {
           method: "DELETE",
           headers: {
             "Content-type": "application/json",

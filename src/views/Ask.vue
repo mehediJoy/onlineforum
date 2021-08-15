@@ -64,7 +64,7 @@ export default {
         authorid: "1"
       };
 
-      const res = await fetch("api/posts", {
+      const res = await fetch("https://csforumapi.herokuapp.com/posts", {
         method: "POST",
         headers: {
           "Content-type": "application/json",
