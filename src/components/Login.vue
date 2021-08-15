@@ -58,6 +58,7 @@ export default {
       if (len !== 0) {
         this.succPage = true;
         this.$store.commit("setLoggedIn");
+        this.$router.push({path: `/`});
       }
     },
     buttonClicked() {
