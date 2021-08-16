@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+  <!--This is the head of login component-->
     <h3>Give Login Information.</h3>
     <form @submit.prevent>
       <div class="form-group">
