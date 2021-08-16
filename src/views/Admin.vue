@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="logPanel" v-show="showlogin">
-      <h4>Wellcome to admin panel.</h4>
+      <h4>Welcome to admin panel.</h4>
       <p>Please Login from below.</p>
       <form @submit.prevent>
         <label for="usr5">Admin:</label>

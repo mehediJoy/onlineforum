@@ -15,11 +15,7 @@
           id="pwd"
         />
       </div>
-      <button
-        @click="buttonClicked()"
-        class="btn btn-outline-primary"
-        type="button"
-      >
+      <button @click="buttonClicked()" class="btn btn-outline-primary" type="button">
         Login
       </button>
     </form>
@@ -29,7 +25,7 @@
     </p>
     <div v-show="showRes">
       <h1 v-if="succPage">Login Successful</h1>
-      <h1 v-else>Please give valid information.</h1>
+      <h1 v-if="failPage">Please give valid information.</h1>
     </div>
   </div>
 </template>
@@ -43,6 +39,7 @@ export default {
       password: "",
       succPage: Boolean,
       showRes: Boolean,
+      failPage: Boolean,
     };
   },
   created() {
@@ -59,6 +56,8 @@ export default {
         this.succPage = true;
         this.$store.commit("setLoggedIn");
         this.$router.push({path: `/`});
+      } else {
+        this.failPage = true;
       }
     },
     buttonClicked() {

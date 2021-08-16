@@ -64,6 +64,7 @@ export default {
       // eslint-disable-next-line no-unused-vars
       const data = await res.json();
       this.succPage = true;
+      this.$router.push({path: "/login"});
     },
   },
 };

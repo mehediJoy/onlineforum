@@ -9,7 +9,7 @@
         <div class="card-body">
           <h4 class="card-title">{{ post.postTitle }}</h4>
           <p class="card-text">{{ post.postBody }}</p>
-          <button class="btn btn-info" @click="eidtPost(post.id)">Eidt</button>
+          <button class="btn btn-info" @click="eidtPost(post.id)">Edit</button>
           <button class="btn btn-danger" @click="deleteSomething(post.id, 1)">Delete</button>
         </div>
       </div>
